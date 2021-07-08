@@ -4,6 +4,7 @@ public class Student {
     private int sid;
     private String sname;
     private int sage;
+    private String sphone;
 
     public Student() {
     }
@@ -12,6 +13,13 @@ public class Student {
         this.sid = sid;
         this.sname = sname;
         this.sage = sage;
+    }
+
+    public Student(int sid, String sname, int sage, String sphone) {
+        this.sid = sid;
+        this.sname = sname;
+        this.sage = sage;
+        this.sphone = sphone;
     }
 
     public int getSid() {
@@ -36,6 +44,14 @@ public class Student {
 
     public void setSage(int sage) {
         this.sage = sage;
+    }
+
+    public String getSphone() {
+        return sphone;
+    }
+
+    public void setSphone(String sphone) {
+        this.sphone = sphone;
     }
 }
 
